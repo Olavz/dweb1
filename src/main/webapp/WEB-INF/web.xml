@@ -9,10 +9,17 @@
         <servlet-name>WebookServlet</servlet-name>
         <servlet-class>com.olavz.demo.server.WebhookServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GraphServlet</servlet-name>
+        <servlet-class>com.olavz.demo.server.GraphServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>WebookServlet</servlet-name>
         <url-pattern>/webhook</url-pattern>
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>GraphServlet</servlet-name>
+        <url-pattern>/graphdata</url-pattern>
+    </servlet-mapping>
 </web-app>
